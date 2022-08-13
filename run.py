@@ -12,7 +12,8 @@ def main():
           "\"c4,up; a0,right; j9,down; e10,left; h7,down\"\n")
     while True:
         input_string = input("Enter your ships' co-ordinates:\n")
-        match = re.match(r"""([a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);\s*){5}""",
+        match = re.match(r"""([a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);\s*){4}
+                              [a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);?\s*""",
                          input_string,
                          flags=re.I | re.M | re.X)
         if match:

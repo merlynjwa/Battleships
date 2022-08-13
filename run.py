@@ -14,6 +14,10 @@ def main():
     match = re.match(r"""([a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);){5}\s*""",
                      input_string,
                      flags=re.I | re.M | re.X)
+    if match:
+        pass
+    else:
+        print("\nThe entered string could not be parsed as co-ordinates\n")
 
 
 main()

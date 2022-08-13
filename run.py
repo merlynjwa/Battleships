@@ -16,7 +16,7 @@ def main():
                              (?P<battleship>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
                              (?P<cruiser>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
                              (?P<submarine>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
-                              [a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);?\s*""",
+                             (?P<destroyer>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));?\s*""",
                          input_string,
                          flags=re.I | re.M | re.X)
         if match:

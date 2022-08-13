@@ -20,7 +20,7 @@ def main():
                          input_string,
                          flags=re.I | re.M | re.X)
         if match:
-            pass
+            ship_strings = match.groupdict()
         else:
             print("\nThe entered string could not be parsed as co-ordinates\n")
 

@@ -14,7 +14,8 @@ def main():
         input_string = input("Enter your ships' co-ordinates:\n")
         match = re.match(r"""(?P<carrier>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
                              (?P<battleship>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
-                             ([a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);\s*){2}
+                             (?P<cruiser>[a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?));\s*
+                             ([a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);\s*)
                               [a-j](10|[0-9]),(up?|r(ight)?|d(own)?|l(eft)?);?\s*""",
                          input_string,
                          flags=re.I | re.M | re.X)

@@ -27,7 +27,9 @@ def main():
 
 class GameBoard:
     def __init__(self):
-        pass
+        self.__board = []
+        for _ in range(0, 10):
+            self.__board.append([" "] * 10)
 
 
 main()

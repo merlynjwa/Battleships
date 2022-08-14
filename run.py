@@ -26,7 +26,8 @@ def main():
 
 
 class GameBoard:
-    pass
+    def __init__(self):
+        pass
 
 
 main()

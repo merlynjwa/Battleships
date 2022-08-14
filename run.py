@@ -25,4 +25,8 @@ def main():
             print("\nThe entered string could not be parsed as co-ordinates\n")
 
 
+class GameBoard:
+    pass
+
+
 main()

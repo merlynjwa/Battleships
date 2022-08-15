@@ -25,6 +25,9 @@ def main():
             print("\nThe entered string could not be parsed as co-ordinates\n")
 
 
+class Game:
+
+
 class GameBoard:
     def __init__(self):
         self.__board = []

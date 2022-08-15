@@ -23,6 +23,7 @@ class Game:
         print("or just the first letter")
         print()
         input("Press enter to continue...\n")
+        self.__player = GameBoard()
 
 
 class GameBoard:

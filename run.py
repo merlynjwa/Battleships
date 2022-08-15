@@ -33,7 +33,17 @@ class GameBoard:
         self.print_shipboard()
 
     def print_shipboard(self):
-        pass
+        # Print the header of the board
+        print()
+        print("   A B C D E F G H I J ")
+        print("-----------------------")
+        # Use an iterator to print each row of the board
+        n = 1
+        for i in self.__board:
+            print('{0:>2d}'.format(n), "|".join(i), sep="|", end="|\n")
+            n = n + 1
+        print("-----------------------")
+        print()
 
 
 main()

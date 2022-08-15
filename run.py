@@ -30,6 +30,10 @@ class GameBoard:
         self.__board = []
         for _ in range(0, 10):
             self.__board.append([" "] * 10)
+        self.print_shipboard()
+
+    def print_shipboard(self):
+        pass
 
 
 main()

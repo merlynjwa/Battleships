@@ -9,6 +9,7 @@ def main():
 
 
 class Game:
+    def __init__(self):
 
 
 class GameBoard:

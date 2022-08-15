@@ -10,6 +10,19 @@ def main():
 
 class Game:
     def __init__(self):
+        print("You will now need to enter the co-ordinates for your ships")
+        print("The co-ordinates are written in the following format:")
+        print()
+        print("a10,up")
+        print()
+        print("The pattern starts with a letter (a - j) (case insensitive)")
+        print("it is then followed by a number (1 - 10)")
+        print("then an optional comma, with optional whitespace after it")
+        print("followed by a direction (up,right,down,left),")
+        print("which can be specified by the full word,")
+        print("or just the first letter")
+        print()
+        input("Press enter to continue...\n")
 
 
 class GameBoard:

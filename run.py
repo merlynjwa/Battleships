@@ -63,7 +63,7 @@ class PlayerGameBoard:
                         self.__add_ship_to_board(ship_dict)
                         break
                     else:
-                        print("There are ships already placed on the squares"
+                        print("There are ships already placed on the squares "
                               "for the new board.")
                         print("Please enter different co-ordinates.")
                 else:

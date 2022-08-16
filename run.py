@@ -41,7 +41,6 @@ class PlayerGameBoard:
         self.__board = []
         for _ in range(0, 10):
             self.__board.append([(" ", None)] * 10)
-        self.print_shipboard()
         self.__ask_user_for_ships_coordinates('carrier', 5)
         self.__ask_user_for_ships_coordinates('battleship', 4)
         self.__ask_user_for_ships_coordinates('cruiser', 3)

@@ -37,6 +37,7 @@ class PlayerGameBoard:
     and functions to act on the board.
     """
     def __init__(self):
+        self.__ships = {}
         self.__board = []
         for _ in range(0, 10):
             self.__board.append([" "] * 10)

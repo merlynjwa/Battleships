@@ -40,7 +40,7 @@ class PlayerGameBoard:
         self.__ships = {}
         self.__board = []
         for _ in range(0, 10):
-            self.__board.append([" "] * 10)
+            self.__board.append([(" ", None)] * 10)
         self.print_shipboard()
         self.__ask_user_for_ships_coordinates('carrier', 5)
         self.__ask_user_for_ships_coordinates('battleship', 4)
@@ -88,7 +88,9 @@ class PlayerGameBoard:
         # Use an iterator to print each row of the board
         n = 1
         for i in self.__board:
-            print('{0:>2d}'.format(n), "|".join(i), sep="|", end="|\n")
+            print('{0:>2d}'.format(n),
+                  "|".join(map(lambda x: x[0], i)),
+                  sep="|", end="|\n")
             n = n + 1
         print("-----------------------")
         print()
@@ -141,7 +143,7 @@ class PlayerGameBoard:
         board = self.__board
         ship_coords = self.__ship_to_coords(ship)
         for i in ship_coords:
-            if board[i[0]][i[1]] != ' ':
+            if board[i[0]][i[1]][0] != ' ':
                 return False
         return True
 

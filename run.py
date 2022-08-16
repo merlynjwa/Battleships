@@ -66,6 +66,7 @@ class PlayerGameBoard:
                         print("There are ships already placed on the squares "
                               "for the new board.")
                         print("Please enter different co-ordinates.")
+                        print()
                 else:
                     print("The ship specified does not fit on the board")
                     print("Please provide co-ordinates which result in a ship")

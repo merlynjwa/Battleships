@@ -109,7 +109,7 @@ class PlayerGameBoard:
         for i in range(0, ship_dict['size']):
             ship_status.append(True)
         ship_dict.update({'status': ship_status})
-        ship_dict.update({'coords'}: self.__ship_to_coords(ship_dict))
+        ship_dict.update({'coords': self.__ship_to_coords(ship_dict)})
 
     def __check_ships_fit_on_board(self, ship_dict):
         ship_direction = ship_dict['direction']

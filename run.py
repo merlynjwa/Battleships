@@ -151,5 +151,8 @@ class PlayerGameBoard:
                                 ship['vertical'] + i * direction_tuple[1]))
         return ship_coords
 
+    def __add_ship_to_board(self, ship):
+        for i in ship['coords']:
+            self.__board[i[0]][i[1]] = ('S', ship)
 
 main()

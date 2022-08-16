@@ -157,4 +157,13 @@ class PlayerGameBoard:
         for i in ship['coords']:
             self.__board[i[0]][i[1]] = ('S', ship)
 
+    def __coord_to_ship_index(self, ship, coord):
+        n = 0
+        for i in ship['coords']:
+            if coord == i:
+                return n
+            n = n + 1
+        return None
+
+
 main()

@@ -43,6 +43,9 @@ class PlayerGameBoard:
         self.print_shipboard()
 
     def print_shipboard(self):
+        """
+        Print the current state of the player's board to stdout
+        """
         # Print the header of the board
         print()
         print("   A B C D E F G H I J ")

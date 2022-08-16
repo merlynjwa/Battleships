@@ -41,17 +41,20 @@ class PlayerGameBoard:
         for _ in range(0, 10):
             self.__board.append([" "] * 10)
         self.print_shipboard()
+
+    def __ask_user_for_ships_coordinates(self, ship_type, ship_size):
         while True:
+            self.print_shipboard()
             input_string = input("Please enter the co-ordinates "
-                                 "for your carrier:\n")
+                                 f"for your {ship_type}:\n")
             print()
             ship_dict = self.__check_input(input_string)
             if ship_dict:
-                ship_dict.update({"size": 5})
+                ship_dict.update({"size": ship_size})
                 self.__normalise_coords(ship_dict)
                 if self.__check_ships_fit_on_board(ship_dict):
                     if self.__check_that_ships_do_not_overlap(ship_dict):
-                        self.__ships.update({'carrier': ship_dict})
+                        self.__ships.update({ship_type: ship_dict})
                         self.__add_ship_to_board(ship_dict)
                         break
                     else:

@@ -49,7 +49,13 @@ class PlayerGameBoard:
             if ship_dict:
                 ship_dict.update({"size": 5})
                 self.__normalise_coords(ship_dict)
-                pass
+                if self.__check_ships_fit_on_board(ship_dict):
+                    pass
+                else:
+                    print("The ship specified does not fit on the board")
+                    print("Please provide co-ordinates which result in a ship")
+                    print("placed within the boards boarders")
+                    print()
             else:
                 print("The input could not be parsed as co-ordinates")
                 print("Please try entering the co-ordinates again")

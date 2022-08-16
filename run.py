@@ -97,5 +97,22 @@ class PlayerGameBoard:
             ship_status.append(True)
         ship_dict.update({'status': ship_status})
 
+    def __ship_to_coords(self, ship):
+        size = ship['size']
+        direction = ship['direction']
+        ship_coords = []
+        if direction == "U":
+            direction_tuple = (0, 1)
+        elif direction == "R":
+            direction_tuple = (1, 0)
+        elif direction == "D":
+            direction_tuple = (0, -1)
+        elif direction == "L":
+            direction_tuple = (-1, 0)
+        for i in range(0, size):
+            ship_coords.append((ship['horizontal'] + i * direction_tuple[0],
+                                ship['vertical'] + i * direction_tuple[1]))
+        return ship_coords
+
 
 main()

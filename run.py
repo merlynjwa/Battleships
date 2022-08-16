@@ -51,6 +51,7 @@ class PlayerGameBoard:
                 self.__normalise_coords(ship_dict)
                 if self.__check_ships_fit_on_board(ship_dict):
                     if self.__check_that_ships_do_not_overlap(ship_dict):
+                        self.__ships.update({'carrier': ship_dict})
                         self.__add_ship_to_board(ship_dict)
                         break
                     else:

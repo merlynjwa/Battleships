@@ -117,7 +117,7 @@ class PlayerGameBoard:
         ship_dict['vertical'] = int(ship_dict['vertical']) - 1
         ship_dict['direction'] = ship_dict['direction'][0].upper()
         ship_status = []
-        for i in range(0, ship_dict['size']):
+        for _ in range(0, ship_dict['size']):
             ship_status.append(True)
         ship_dict.update({'status': ship_status})
         ship_dict.update({'coords': self.__ship_to_coords(ship_dict)})

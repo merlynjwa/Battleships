@@ -141,9 +141,8 @@ class PlayerGameBoard:
 
     def __check_that_ships_do_not_overlap(self, ship):
         board = self.__board
-        ship_coords = self.__ship_to_coords(ship)
-        for i in ship_coords:
-            if board[i[0]][i[1]][0] != ' ':
+        for i in ship['coords']:
+            if board[i[1]][i[0]][0] != ' ':
                 return False
         return True
 
@@ -166,7 +165,7 @@ class PlayerGameBoard:
 
     def __add_ship_to_board(self, ship):
         for i in ship['coords']:
-            self.__board[i[0]][i[1]] = ('S', ship)
+            self.__board[i[1]][i[0]] = ('S', ship)
 
     def __coord_to_ship_index(self, ship, coord):
         n = 0

@@ -31,6 +31,11 @@ class Game:
 
 
 class PlayerGameBoard:
+    """
+    The player's game board.
+    Containing all of their ships, where they've fired their missiles,
+    and functions to act on the board.
+    """
     def __init__(self):
         self.__board = []
         for _ in range(0, 10):

@@ -62,5 +62,22 @@ class PlayerGameBoard:
         print("-----------------------")
         print()
 
+    def __check_input(self, input_str):
+        match = re.match(r"""# Match the letter of the co-ord
+                             (?P<horizontal>[a-j])
+                             # Match the digit of the co-ord
+                             (?P<vertical>10|[1-9])
+                             # Allow a comma and whitespace after
+                             (,\s*|\s+)
+                             # Match the direction of the ship
+                             (?P<direction>up?|r(ight)?|d(own)?|l(eft)?)
+                             # Allow extra input after the main pattern
+                             .*""",
+                         input_str, flags=re.I | re.M | re.X)
+        if match:
+            return match.groupdict()
+        else:
+            return None
+
 
 main()

@@ -45,6 +45,7 @@ class PlayerGameBoard:
         self.__ask_user_for_ships_coordinates('battleship', 4)
         self.__ask_user_for_ships_coordinates('cruiser', 3)
         self.__ask_user_for_ships_coordinates('submarine', 3)
+        self.__ask_user_for_ships_coordinates('destroyer', 2)
 
     def __ask_user_for_ships_coordinates(self, ship_type, ship_size):
         while True:

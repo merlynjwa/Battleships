@@ -47,6 +47,7 @@ class PlayerGameBoard:
             print()
             ship_dict = self.__check_input(input_string)
             if ship_dict:
+                ship_dict.update({"size": 5})
                 self.__normalise_coords(ship_dict)
                 pass
             else:

@@ -98,6 +98,23 @@ class PlayerGameBoard:
         ship_dict.update({'status': ship_status})
         ship_dict.update({'coords'}: self.__ship_to_coords(ship_dict))
 
+    def __check_ships_fit_on_board(self, ship_dict):
+        ship_direction = ship_dict['direction']
+        ship_size = ship_dict['size']
+        if ship_direction == 'U':
+            if ship_dict['vertical'] + ship_size - 1 >= 10:
+                return False
+        elif ship_direction == 'D':
+            if ship_dict['vertical'] - ship_size + 1 < 0:
+                return False
+        elif ship_direction == 'R':
+            if ship_dict['horizontal'] + ship_size - 1 >= 10:
+                return False
+        elif ship_direction == 'L':
+            if ship_dict['horizontal'] - ship_size + 1 < 0:
+                return False
+        return True
+
     def __ship_to_coords(self, ship):
         size = ship['size']
         direction = ship['direction']

@@ -45,6 +45,13 @@ class PlayerGameBoard:
             input_string = input("Please enter the co-ordinates "
                                  "for your carrier:\n")
             print()
+            ship_dict = self.__check_input(input_string)
+            if ship_dict:
+                pass
+            else:
+                print("The input could not be parsed as co-ordinates")
+                print("Please try entering the co-ordinates again")
+                print()
 
     def print_shipboard(self):
         """

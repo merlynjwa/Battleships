@@ -28,6 +28,7 @@ class Game:
         print()
         input("Press enter to continue...\n")
         self.__player = PlayerGameBoard()
+        self.__player.print_shipboard()
 
 
 class PlayerGameBoard:

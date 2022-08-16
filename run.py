@@ -86,5 +86,10 @@ class PlayerGameBoard:
         else:
             return None
 
+    def __normalise_coords(self, ship_dict):
+        ship_dict['horizontal'] = ord(ship_dict['horizontal'].upper()) - 65
+        ship_dict['vertical'] = int(ship_dict['vertical']) - 1
+        ship_dict['direction'] = ship_dict['direction'][0].upper()
+
 
 main()

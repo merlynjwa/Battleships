@@ -121,6 +121,14 @@ class PlayerGameBoard:
                 return False
         return True
 
+    def __check_that_ships_do_not_overlap(self, ship):
+        board = self.__board
+        ship_coords = self.__ship_to_coords(ship)
+        for i in ship_coords:
+            if board[i[0]][i[1]] != ' ':
+                return False
+        return True
+
     def __ship_to_coords(self, ship):
         size = ship['size']
         direction = ship['direction']

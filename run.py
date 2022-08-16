@@ -9,6 +9,10 @@ def main():
 
 
 class Game:
+    """
+    The game's main engine.
+    Containing all the main opperations and functions for Battleships.
+    """
     def __init__(self):
         print("You will now need to enter the co-ordinates for your ships")
         print("The co-ordinates are written in the following format:")

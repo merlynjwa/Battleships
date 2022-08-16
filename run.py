@@ -92,6 +92,10 @@ class PlayerGameBoard:
         ship_dict['horizontal'] = ord(ship_dict['horizontal'].upper()) - 65
         ship_dict['vertical'] = int(ship_dict['vertical']) - 1
         ship_dict['direction'] = ship_dict['direction'][0].upper()
+        ship_status = []
+        for i in range(0, ship_dict['size']):
+            ship_status.append(True)
+        ship_dict.update({'status': ship_status})
 
 
 main()

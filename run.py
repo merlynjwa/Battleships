@@ -5,7 +5,7 @@ def main():
     """
     The beginning of the program
     """
-    GameBoard()
+    Game()
 
 
 class Game:

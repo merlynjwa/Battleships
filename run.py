@@ -47,6 +47,7 @@ class PlayerGameBoard:
             print()
             ship_dict = self.__check_input(input_string)
             if ship_dict:
+                self.__normalise_coords(ship_dict)
                 pass
             else:
                 print("The input could not be parsed as co-ordinates")

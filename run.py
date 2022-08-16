@@ -42,6 +42,7 @@ class PlayerGameBoard:
             self.__board.append([" "] * 10)
         self.print_shipboard()
         self.__ask_user_for_ships_coordinates('carrier', 5)
+        self.__ask_user_for_ships_coordinates('battleship', 4)
 
     def __ask_user_for_ships_coordinates(self, ship_type, ship_size):
         while True:

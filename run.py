@@ -27,10 +27,10 @@ class Game:
         print("or just the first letter")
         print()
         input("Press enter to continue...\n")
-        self.__player = GameBoard()
+        self.__player = PlayerGameBoard()
 
 
-class GameBoard:
+class PlayerGameBoard:
     def __init__(self):
         self.__board = []
         for _ in range(0, 10):

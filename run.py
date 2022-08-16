@@ -41,6 +41,10 @@ class PlayerGameBoard:
         for _ in range(0, 10):
             self.__board.append([" "] * 10)
         self.print_shipboard()
+        while True:
+            input_string = input("Please enter the co-ordinates "
+                                 "for your carrier:\n")
+            print()
 
     def print_shipboard(self):
         """

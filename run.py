@@ -51,7 +51,8 @@ class PlayerGameBoard:
                 self.__normalise_coords(ship_dict)
                 if self.__check_ships_fit_on_board(ship_dict):
                     if self.__check_that_ships_do_not_overlap(ship_dict):
-                        pass
+                        self.__add_ship_to_board(ship_dict)
+                        break
                     else:
                         print("There are ships already placed on the squares"
                               "for the new board.")

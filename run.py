@@ -126,10 +126,10 @@ class PlayerGameBoard:
         ship_direction = ship_dict['direction']
         ship_size = ship_dict['size']
         if ship_direction == 'U':
-            if ship_dict['vertical'] + ship_size - 1 >= 10:
+            if ship_dict['vertical'] - ship_size + 1 < 0:
                 return False
         elif ship_direction == 'D':
-            if ship_dict['vertical'] - ship_size + 1 < 0:
+            if ship_dict['vertical'] + ship_size - 1 >= 10:
                 return False
         elif ship_direction == 'R':
             if ship_dict['horizontal'] + ship_size - 1 >= 10:
@@ -152,11 +152,11 @@ class PlayerGameBoard:
         direction = ship['direction']
         ship_coords = []
         if direction == "U":
-            direction_tuple = (0, 1)
+            direction_tuple = (0, -1)
         elif direction == "R":
             direction_tuple = (1, 0)
         elif direction == "D":
-            direction_tuple = (0, -1)
+            direction_tuple = (0, 1)
         elif direction == "L":
             direction_tuple = (-1, 0)
         for i in range(0, size):

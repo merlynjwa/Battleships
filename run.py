@@ -50,7 +50,12 @@ class PlayerGameBoard:
                 ship_dict.update({"size": 5})
                 self.__normalise_coords(ship_dict)
                 if self.__check_ships_fit_on_board(ship_dict):
-                    pass
+                    if self.__check_that_ships_do_not_overlap(ship_dict):
+                        pass
+                    else:
+                        print("There are ships already placed on the squares"
+                              "for the new board.")
+                        print("Please enter different co-ordinates.")
                 else:
                     print("The ship specified does not fit on the board")
                     print("Please provide co-ordinates which result in a ship")

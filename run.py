@@ -96,6 +96,7 @@ class PlayerGameBoard:
         for i in range(0, ship_dict['size']):
             ship_status.append(True)
         ship_dict.update({'status': ship_status})
+        ship_dict.update({'coords'}: self.__ship_to_coords(ship_dict))
 
     def __ship_to_coords(self, ship):
         size = ship['size']

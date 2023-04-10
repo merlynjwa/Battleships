@@ -43,3 +43,8 @@ If all of a player's ships are sunk, that player loses.
 
 This project makes use of Python.
 Python software and documentation is licensed under the [PSF License Agreement](https://docs.python.org/3/license.html#psf-license)
+
+### Code Institute
+
+This project makes use of the Code Institute's Gitpod template.
+This template is available [here](https://github.com/Code-Institute-Org/python-essentials-template)

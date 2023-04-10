@@ -36,3 +36,5 @@ If there was a ship on the square chosen, the ship is hit.
 If a player can hit all the squares of a ship, that ship is sunk.
 
 If all of a player's ships are sunk, that player loses.
+
+## Credits

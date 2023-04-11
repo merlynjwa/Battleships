@@ -51,6 +51,8 @@ Python software and documentation is licensed under the [PSF License Agreement](
 This app makes use of the regular expression library from the CPython standard library.
 This library is under copyright of 'Secret Labs AB' and is distributed under the [CNRI's Python 1.6 license](https://docs.python.org/3/license.html#cnri-license-agreement-for-python-1-6-1)
 
+I used the documentation available [here](https://docs.python.org/3/library/re.html#module-re) to assist me with writing the code for the `PlayerGameBoard.__check_input` method.
+
 ### Code Institute
 
 This project makes use of the Code Institute's Gitpod template.

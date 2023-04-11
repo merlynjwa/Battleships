@@ -39,6 +39,11 @@ If all of a player's ships are sunk, that player loses.
 
 ## Testing
 
+### PEP8 Validator
+
+I passed my code into the [Code Institute PEP8 Validator](https://pep8ci.herokuapp.com/).
+My code passed without any errors.
+
 ## Credits
 
 ### Python

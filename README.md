@@ -50,3 +50,17 @@ This project makes use of the Code Institute's Gitpod template.
 This template is available [here](https://github.com/Code-Institute-Org/python-essentials-template)
 
 ## Deployment
+
+This application was deployed on Heroku
+
+The steps for the deployment were as follows:
+1. Sign up for Heroku
+2. Create a new app from the dashboard
+3. Fill in the inital details of the app - name, region
+4. Move to the settings of the app and add a config variable key and value pair of: `PORT=8000`
+5. From the settings page, add `heroku/python` and `heroku/nodejs` to the list of buildpacks; making sure that they are kept in that order
+6. Move to the deployment page of the heroku app's settings, connect the app to my GitHub account and connect it to this repository
+7. Make sure that the deployment is based on the `main` branch of the repository and manually deploy the app
+8. Make sure that the application was deployed successfully and check and test the application performs as expected
+
+I have chosen to keep the deployment manual

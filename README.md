@@ -46,6 +46,11 @@ Python software and documentation is licensed under the [PSF License Agreement](
 
 ### Python Libraries
 
+#### Re
+
+This app makes use of the regular expression library from the CPython standard library.
+This library is under copyright of 'Secret Labs AB' and is distributed under the [CNRI's Python 1.6 license](https://docs.python.org/3/license.html#cnri-license-agreement-for-python-1-6-1)
+
 ### Code Institute
 
 This project makes use of the Code Institute's Gitpod template.

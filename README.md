@@ -87,6 +87,12 @@ In the case that the user enters an input for a unit's position which would resu
 
 The intended benefit of this is to handle an error case and make it clear to the user what went wrong, rather than silently discarding their input, or corrupting the program state with an invalid board state.
 
+#### Entry of all user ships' positions
+
+![Display of game board in the case of the user defining all of their ships positions](./assets/screenshots/entry_of_all_ships_co-ordinates.png)
+
+Once the user has defined all of their units with valid positions, the game board is displayed, showing all of their ships in their correct positions.
+
 ## Testing
 
 ### PEP8 Validator

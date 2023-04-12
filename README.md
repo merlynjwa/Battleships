@@ -59,6 +59,12 @@ After the user presses enter to pass the initial instructions provided to them, 
 Above the prompt where they can enter their chosen position and orientation of this unit, the game board is drawn.
 At this stage the board is empty. However, this still provides a benefit to the user by assisting with visualising the play field for their units.
 
+#### Entry of input unparseable as co-ordinates
+
+![Error message printed informing the user that the input provided was unparseable as ship co-ordinates](./assets/screenshots/unparseable_co-ordinates.png)
+
+If the user enters a string which the program fails to parse as valid co-ordinate and orientation data for their ships, they are provided with an error/warning informing them that the string did not match the pattern expected for this input request.
+
 ## Testing
 
 ### PEP8 Validator

@@ -50,6 +50,15 @@ The app provides the user with an explanation and example of the input accepted 
 
 The intended value of this is to make it clear to the user of what they are expected to do at the beginning of the program, and by explaining how much leeway they are allowed with their choice of input.
 
+#### First prompt for ships co-ordinates
+
+![Empty game board displayed and prompt for user's input of their carrier's co-ordinates](./assets/screenshots/prompt_for_carrier_co-ordinates.png)
+
+After the user presses enter to pass the initial instructions provided to them, they are asked to enter the co-ordinates for their carrier.
+
+Above the prompt where they can enter their chosen position and orientation of this unit, the game board is drawn.
+At this stage the board is empty. However, this still provides a benefit to the user by assisting with visualising the play field for their units.
+
 ## Testing
 
 ### PEP8 Validator

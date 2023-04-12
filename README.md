@@ -37,6 +37,8 @@ If a player can hit all the squares of a ship, that ship is sunk.
 
 If all of a player's ships are sunk, that player loses.
 
+## Design
+
 ## Testing
 
 ### PEP8 Validator

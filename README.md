@@ -39,6 +39,8 @@ If all of a player's ships are sunk, that player loses.
 
 ## Design
 
+### Features
+
 ## Testing
 
 ### PEP8 Validator

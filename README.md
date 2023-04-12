@@ -65,6 +65,12 @@ At this stage the board is empty. However, this still provides a benefit to the 
 
 If the user enters a string which the program fails to parse as valid co-ordinate and orientation data for their ships, they are provided with an error/warning informing them that the string did not match the pattern expected for this input request.
 
+#### Entry of a unit's position which doesn't fit on the game board
+
+![Erorr message printed informing the user that the input co-ordinates and orientation for the current unit will result in the unit being off the game board, which is invalid](./assets/screenshots/error_on_co-ordinates_which_don't_fit.png)
+
+If the user enters a string which is parseable as co-ordinates and an orientation for the given unit which the program is requesting input for, however, the resulting position would be invalid (i.e. a ship which is off of the game board), then the program prints an error informing the user of this fact.
+
 ## Testing
 
 ### PEP8 Validator

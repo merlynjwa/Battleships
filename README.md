@@ -123,7 +123,9 @@ This template is available [here](https://github.com/Code-Institute-Org/python-e
 
 ## Deployment
 
-This application was deployed on Heroku
+This application was deployed on Heroku.
+It is deployed at the followng location:
+[https://battleships-mjwa.herokuapp.com/](https://battleships-mjwa.herokuapp.com/)
 
 The steps for the deployment were as follows:
 1. Sign up for Heroku

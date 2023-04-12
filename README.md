@@ -79,6 +79,14 @@ Once the user enters a valid co-ordinate and orientation for their unit, they ar
 
 If they still have units which they need to specify the position of, they will then be asked for input for the next unit. The game board will be redrawn for each unit which is given a valid position.
 
+#### Entry of unit positions which overlap with previously defined units
+
+![Error message printed informing the user that the position which they just tried to define for the unit the program is currently requesting will overlap with a previously defined unit](./assets/screenshots/error_on_entry_of_overlapping_co-ordinates.png)
+
+In the case that the user enters an input for a unit's position which would result in the unit overlapping with a previously defined unit, they are provided with an error message informing them of this.
+
+The intended benefit of this is to handle an error case and make it clear to the user what went wrong, rather than silently discarding their input, or corrupting the program state with an invalid board state.
+
 ## Testing
 
 ### PEP8 Validator

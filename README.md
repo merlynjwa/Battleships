@@ -95,10 +95,22 @@ Once the user has defined all of their units with valid positions, the game boar
 
 ## Testing
 
+I have tested my Python code in `run.py` through the following ways:
+
 ### PEP8 Validator
 
 I passed my code into the [Code Institute PEP8 Validator](https://pep8ci.herokuapp.com/).
 My code passed without any errors.
+
+### Manual testing of functions
+
+I passed test inputs to the functions of my app to make sure that inputs which I wished to be supported resulted in outputs which I predicted.
+
+I also attempted providing inputs which were not valid to test what the resulting action of function was.
+
+### Gameplay
+
+I tested my app by running it and making sure to provide edgecase inputs to check that the application gracefully handles error cases, and that it performs as expected when given 'normal' inputs.
 
 ## Credits
 

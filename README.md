@@ -41,6 +41,15 @@ If all of a player's ships are sunk, that player loses.
 
 ### Features
 
+#### Initial instructions
+
+![Instructions provided when first starting the app](./assets/screenshots/start_of_app.png)
+
+When starting the app, the user is provided with instructions explaining that the app will prompt for input of the user's ships.
+The app provides the user with an explanation and example of the input accepted as valid co-ordinates for their ships.
+
+The intended value of this is to make it clear to the user of what they are expected to do at the beginning of the program, and by explaining how much leeway they are allowed with their choice of input.
+
 ## Testing
 
 ### PEP8 Validator

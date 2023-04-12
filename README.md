@@ -71,6 +71,14 @@ If the user enters a string which the program fails to parse as valid co-ordinat
 
 If the user enters a string which is parseable as co-ordinates and an orientation for the given unit which the program is requesting input for, however, the resulting position would be invalid (i.e. a ship which is off of the game board), then the program prints an error informing the user of this fact.
 
+#### Valid entry of a unit's co-ordinates and orientation
+
+![Game board displayed after the user successfully enters valid co-ordinates and orientation for their ship](./assets/screenshots/successfully_entered_co-ordinates_for_the_carrier.png)
+
+Once the user enters a valid co-ordinate and orientation for their unit, they are then shown the game board with the resulting unit drawn in the correct position.
+
+If they still have units which they need to specify the position of, they will then be asked for input for the next unit. The game board will be redrawn for each unit which is given a valid position.
+
 ## Testing
 
 ### PEP8 Validator
